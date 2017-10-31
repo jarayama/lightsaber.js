@@ -51,6 +51,8 @@ setInterval(beamanim, 20);
 handle.addEventListener(mousedown, function(){beamOn = true;});
 handle.addEventListener(mouseup,   function(){beamOn = false;});
 
+beamOn = true;
+
 ///////////////////////////
 var ctx = new AudioContext();
 var gain = ctx.createGain();
