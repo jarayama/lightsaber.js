@@ -52,7 +52,7 @@ handle.addEventListener(mousedown, function(){beamOn = true;});
 handle.addEventListener(mouseup,   function(){beamOn = false;});
 
 ///////////////////////////
-var ctx = new webkitAudioContext();
+var ctx = new AudioContext();
 var gain = ctx.createGain();
 gain.gain.value = 0.5;
 var gainBase = 0.3;
