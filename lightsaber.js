@@ -98,7 +98,11 @@ window.addEventListener("devicemotion", function(e) {
   mag = ac.y;
   gainBase = Math.min(Math.max(mag / 10, 0.05), 1);
 
-  osc.frequency.value = 90 + mag * 0.1;
+  //osc.frequency.value = 90 + mag * 0.1;
+    
+  var audio = new Audio('horse.mp3');
+  audio.loop = false;
+  audio.play(); 
 
 });
 
