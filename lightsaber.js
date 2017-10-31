@@ -77,13 +77,12 @@ wet.connect(ctx.destination);
 
 var osc = null;
 
-handle.addEventListener(mousedown, function(){
   osc = ctx.createOscillator();
   osc.type = "sawtooth";
   osc.frequency.value = 90;
   osc.connect(gain);
   osc.start(0);
-});
+
 
 handle.addEventListener(mouseup, function(){
   osc.stop(0);
